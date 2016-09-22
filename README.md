@@ -71,16 +71,16 @@ which should print out something like this:
 
 ### Version 3, with git
 Get the source code:
-<code bash>
+``
 git clone https://github.com/espressomd/espresso.git
-</code>
-go in the directory, and make a new directory called "build", go into "build" and run "cmake"
-<code>
-cd espresso\\
-mkdir build\\
-cd build\\
-cmake ../\\
-</code>
+``
+go in the directory, and make a new directory called ``build``, go into ``build`` and run ``cmake``
+``
+cd espresso
+mkdir build
+cd build
+cmake ../
+``
 
 You will see if you need dependencies, if everything seems fine, you can copy the config file here in the "build" directory and compile ESPResSo with "make"
 
