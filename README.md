@@ -97,11 +97,11 @@ Test by running "pypresso"
 
 which should bring you to an interactive python shell
 
-<code> 
+```
 [GCC 4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.31)] on darwin\\
 Type "help", "copyright", "credits" or "license" for more information.\\
 \>>>\\
-</code>
+```
 
 
 ----------
@@ -110,14 +110,14 @@ Type "help", "copyright", "credits" or "license" for more information.\\
 ##Installing ESPResSo dependencies
 
 ### On MacOSX, using home brew
-<code>
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\\
 brew update\\
 brew install python\\
 brew install cmake\\
 brew install fftw\\
 pip install numpy\\
-</code>
+```
 
 For ESPResSo 3, you need openMPI, boost and cython
 <code>
