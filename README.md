@@ -3,11 +3,12 @@
 A few polymer examples on ESPResSo for PHY-5320
 
 Options: 
-- Install ESPResSo (MacOSX, Linux, NOT windows)
- -ESPResSo 2- PROS: Fast, Has Constraints (wall+tube), good documentation, CON: uses TCL
- -ESPResSo 3 - PROS: Uses python, CONS: Slow, no constraints, little documentation
-- Get an account on a server
-- Install another package, [HOOMD,](http://glotzerlab.engin.umich.edu/hoomd-blue/) [LAMMPS](http://lammps.sandia.gov/)
+
+1. Install ESPResSo (MacOSX, Linux, NOT windows)
+   * ESPResSo 2- PROS: Fast, Has Constraints (wall+tube), good documentation, CON: uses TCL
+   * ESPResSo 3 - PROS: Uses python, CONS: Slow, no constraints, little documentation
+2. Get an account on a server with a pre-installed version
+3. Install another package, [HOOMD,](http://glotzerlab.engin.umich.edu/hoomd-blue/) [LAMMPS](http://lammps.sandia.gov/) etc,
  
 ----------
 ## Install ESPResSo
