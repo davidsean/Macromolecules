@@ -40,16 +40,16 @@ which should print out something like this:
 
 <code>
 \*******************************************************
-*                                                     *
-*                    - Espresso -                     *
-*                    ============                     *
-*      A MPI Parallel Molecular Dynamics Program      *
-*                                                     *
-*                                                     *
-* (c) 2002-2006                                       *
-* Max-Planck-Institute for Polymer Research           *
-* Mainz, Germany                                      *
-*                                                     *
+\*                                                     *
+\*                    - Espresso -                     *
+\*                    ============                     *
+\*      A MPI Parallel Molecular Dynamics Program      *
+\*                                                     *
+\*                                                     *
+\* (c) 2002-2006                                       *
+\* Max-Planck-Institute for Polymer Research           *
+\* Mainz, Germany                                      *
+\*                                                     *
 \*******************************************************
 </code>
 
