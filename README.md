@@ -16,17 +16,17 @@ Options:
 This version is only supported with TCL
 you can download it here: [ESPResSo 2](http://download.savannah.gnu.org/releases/espressomd/Espresso-2.1.2j.tar.gz)
 
-or used the command
-<code bash>
+or used the ``wget`` command
+```
 wget http://download.savannah.gnu.org/releases/espressomd/Espresso-2.1.2j.tar.gz
-</code>
+```
 
 Unzip the archive and go in the dircectory it created
 
-<code>
+```
 tar -zxf Espresso-2.1.2j.tar.gz \\
 cd espresso-2.1.2j\\
-</code>
+```
 
 Copy the configuration file over, 
 
@@ -75,12 +75,12 @@ Get the source code:
 git clone https://github.com/espressomd/espresso.git
 ``
 go in the directory, and make a new directory called ``build``, go into ``build`` and run ``cmake``
-``
+```
 cd espresso
 mkdir build
 cd build
 cmake ../
-``
+```
 
 You will see if you need dependencies, if everything seems fine, you can copy the config file here in the "build" directory and compile ESPResSo with "make"
 
