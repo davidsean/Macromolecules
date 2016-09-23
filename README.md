@@ -137,5 +137,26 @@ etc etc
 ----------
 
 
-  
+## Get an account
+
+I made user accounts on 137.122.32.210, which is only accessible from a UOttawa computer.
+The accounts name is taken the Univerity of Ottawa identifier are uo_name@uottawa.ca,
+and the password is the same thing, but written in capital letters.
+for example, my University email is ``dsean092@uottawa.ca``.
+
+This means that for me,
+
+username: ``dsean092``
+password: ``DSEAN092``
+
+I can access it via ``ssh``, from a command-line type:
+
+```
+ssh dsean092@137.122.32.210
+```
+and type in the password when prompted.
+The first thing you should do is change the password using the command ``passwd``
+ESPResSo is installed system-wide,
+
+to use python (with espresso 3)  use ``pypresso`` or use ``Espresso`` in which case opens a TCL session.
 
