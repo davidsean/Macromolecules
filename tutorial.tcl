@@ -5,7 +5,7 @@
 #puts "Hello world!"
 
 #variables are defined with the "set" command
-set pi 3.14
+#set pi 3.14
 #pi=3.14
 
 #to refer to variables, prepend them with the $-sign
@@ -19,7 +19,7 @@ set pi 3.14
 #puts [expr $pi*2]
 
 #the command incr increments an integer variable by one
-set my_int 0
+#set my_int 0
 
 #puts $my_int
 #incr my_int
@@ -27,8 +27,8 @@ set my_int 0
 
 
 # this is just a shortcut to...
-puts $my_int
-set my_int [expr $my_int+1]
+#puts $my_int
+#set my_int [expr $my_int+1]
 
 
 # but it needs to be an integer!
