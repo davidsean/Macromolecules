@@ -7,7 +7,7 @@
 #================================================================================
 #
 # name:   initSaw.tcl
-# author: ftessier
+# author: David Sean
 # date:   09/16/2016
 #
 # TCL script to create random walks using ESPResSo
@@ -75,7 +75,7 @@ proc warm_up { }  {
 puts "[code_info]"
 
 
-set n_mono 100
+set n_mono 10
 
   
 
@@ -144,6 +144,8 @@ set n_mono 100
 
 # same observables to file? (yes/no)
 	set obs_file_name "$base_name.dat"
+    set obs_file [open $obs_file_name "w"]
+
 
 ################=- Print some variables -=####################
 ##############################################################
@@ -210,33 +212,38 @@ set n_mono 100
 
 
 
-
-
-
 ######################=- INITIALIZE -=#######################
 #############################################################
 # bond length, and SAW attempts
 	set b 0.97
-	set try_max 30000000
+	set try_max 3000000
 
 # create using a Pruned Self-Avoiding Random Walk (WARNING: NOT A RANDOM WALK)
 	polymer 1 $n_mono $b start 0 pos [expr 0.5*$lx] [expr 0.5*$ly] [expr 0.5*$lz] mode PSAW [expr .99*$b] $try_max bond $bondID_fene
 
 # warm-up the polymer!
-	warm_up
+	#warm_up
+	
 
 
 #######################=- RUN LOOP -=########################
 #############################################################
 # Ready for the main simulation loop,
-	set num_frame 1000
+	set num_frame 500
 	set steps_per_frame 100
-	thermostat langevin $kBT $gamma
+	#thermostat langevin $kBT $gamma
 
 	puts "*** Starting Simulation, outputing every $steps_per_frame steps"
 	for {set t 0} {$t<$num_frame} { incr t} {
-	  integrate $steps_per_frame
-	  update_trajectory
+	  #integrate $steps_per_frame
+	  integrate 100
+
+	  set dx [expr [lindex [part 0 print pos] 0]-[lindex [part [expr $n_mono-1] print pos] 0]]
+	  set dy [expr [lindex [part 0 print pos] 1]-[lindex [part [expr $n_mono-1] print pos] 1]]
+	  set dz [expr [lindex [part 0 print pos] 2]-[lindex [part [expr $n_mono-1] print pos] 2]]
+	  puts $obs_file [expr sqrt($dx*$dx + $dy*$dy + $dz*$dz)]
+	  
+	  #update_trajectory
 	}
 	puts "*** Simulation finished"
 

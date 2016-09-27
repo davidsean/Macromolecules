@@ -7,7 +7,7 @@
 #================================================================================
 #
 # name:   initSaw.tcl
-# author: ftessier
+# author: David Sean
 # date:   09/16/2016
 #
 # TCL script to create random walks using ESPResSo

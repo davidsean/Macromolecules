@@ -12,6 +12,13 @@ data=np.loadtxt(fname,skiprows=4,comments="t")
 data=np.reshape(data,(num_frame,num_mono,4))
 
 
+
+
+
+print data[2,0,1]
+
+exit()
+
 dist=np.zeros(num_frame)
 for f in range(num_frame):
   dx=data[f,0,1]-data[f,num_mono-1,1]
