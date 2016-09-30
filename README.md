@@ -7,7 +7,7 @@ Options:
 1. Install ESPResSo (MacOSX, Linux, NOT windows)
    * ESPResSo 2 (RECOMMENDED)- PROS: Fast, Has Constraints (wall+tube), good documentation, CON: uses TCL
    * ESPResSo 3 - PROS: Uses python, CONS: Slow, no constraints, little documentation
-2. Get an account on a server with a pre-installed version
+2. Get an account on a server with a pre-installed version (RECOMMENDED)
 3. Install another package, [HOOMD,](http://glotzerlab.engin.umich.edu/hoomd-blue/) [LAMMPS](http://lammps.sandia.gov/) etc,
  
 ----------
@@ -139,7 +139,7 @@ etc etc, same for the other dependencies
 
 ## Get an account
 
-I made user accounts on 137.122.32.210, which is only accessible from a UOttawa computer.
+I made user accounts on 10.65.16.82, which is only accessible from a UOttawa computer.
 The accounts name is taken the Univerity of Ottawa identifier are uo_name@uottawa.ca,
 and the password is the same thing, but written in capital letters.
 for example, my University email is ``dsean092@uottawa.ca``.
@@ -152,7 +152,7 @@ password: ``DSEAN092``
 I can access it via ``ssh``, from a command-line type:
 
 ```
-ssh dsean092@137.122.32.210
+ssh dsean092@10.65.16.82
 ```
 and type in the password when prompted.
 The first thing you should do is change the password using the command ``passwd``
