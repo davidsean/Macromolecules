@@ -1,5 +1,8 @@
 # Macromolecules
 
+
+UPDATE: the new server address is 172.20.64.135 (only espresso 2.1.2j is installed)
+
 A few polymer examples on ESPResSo for PHY-5320
 
 Options: 
@@ -152,7 +155,7 @@ password: ``DSEAN092``
 I can access it via ``ssh``, from a command-line type:
 
 ```
-ssh dsean092@10.65.16.82
+ssh dsean092@172.20.64.135
 ```
 and type in the password when prompted.
 The first thing you should do is change the password using the command ``passwd``
