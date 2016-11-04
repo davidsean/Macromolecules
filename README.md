@@ -142,7 +142,7 @@ etc etc, same for the other dependencies
 
 ## Get an account
 
-I made user accounts on 10.65.16.82, which is only accessible from a UOttawa computer.
+I made user accounts on 172.20.64.135, which is only accessible from a UOttawa computer.
 The accounts name is taken the Univerity of Ottawa identifier are uo_name@uottawa.ca,
 and the password is the same thing, but written in capital letters.
 for example, my University email is ``dsean092@uottawa.ca``.
