@@ -62,7 +62,7 @@ system = espressomd.System()
 #if no seed is provided espresso generates a seed
 
 system.time_step = 0.01
-system.cell_system.skin = 0.4
+system.cell_system.skin = 11.
 system.box_l = [100, 100, 100]
 system.thermostat.set_langevin(kT=1.0, gamma=1.0)
 system.cell_system.set_n_square(use_verlet_lists=True)

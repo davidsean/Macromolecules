@@ -118,7 +118,7 @@ set n_mono 100
 	set gamma 1.0
 
 # init Langevin thermostat
-	setmd skin 0.4
+	setmd skin 11.0
 	integrate set nvt
 
 # init integration timestep
@@ -254,9 +254,10 @@ if {$vis_file=="yes"}	{
 	for {set p 1} {$p<[expr $n_mono-1]} {incr p} {
 	 part $p bond $bondID_angle [expr $p-1] [expr $p+1]
 	}
-
 # warm-up the polymer!
 	warm_up
+
+	
 
 #######################=- RUN LOOP -=########################
 #############################################################
