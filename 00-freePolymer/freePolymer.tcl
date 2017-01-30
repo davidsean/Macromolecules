@@ -117,7 +117,7 @@ set n_mono 10
 	set gamma 1.0
 
 # init Langevin thermostat
-	setmd skin 0.4
+	setmd skin 48.5
 	integrate set nvt
 
 # init integration timestep
@@ -233,17 +233,18 @@ set n_mono 10
 	set steps_per_frame 100
 	#thermostat langevin $kBT $gamma
 
+
 	puts "*** Starting Simulation, outputing every $steps_per_frame steps"
 	for {set t 0} {$t<$num_frame} { incr t} {
 	  #integrate $steps_per_frame
 	  integrate 100
 
-	  set dx [expr [lindex [part 0 print pos] 0]-[lindex [part [expr $n_mono-1] print pos] 0]]
-	  set dy [expr [lindex [part 0 print pos] 1]-[lindex [part [expr $n_mono-1] print pos] 1]]
-	  set dz [expr [lindex [part 0 print pos] 2]-[lindex [part [expr $n_mono-1] print pos] 2]]
-	  puts $obs_file [expr sqrt($dx*$dx + $dy*$dy + $dz*$dz)]
+	  #set dx [expr [lindex [part 0 print pos] 0]-[lindex [part [expr $n_mono-1] print pos] 0]]
+	  #set dy [expr [lindex [part 0 print pos] 1]-[lindex [part [expr $n_mono-1] print pos] 1]]
+	  #set dz [expr [lindex [part 0 print pos] 2]-[lindex [part [expr $n_mono-1] print pos] 2]]
+	  #puts $obs_file [expr sqrt($dx*$dx + $dy*$dy + $dz*$dz)]
 	  
-	  #update_trajectory
+	  update_trajectory
 	}
 	puts "*** Simulation finished"
 

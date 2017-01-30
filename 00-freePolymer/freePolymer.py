@@ -41,7 +41,7 @@ system = espressomd.System()
 #if no seed is provided espresso generates a seed
 
 system.time_step = 0.01
-system.cell_system.skin = 0.4
+system.cell_system.skin = 48.5
 system.box_l = [100, 100, 100]
 system.thermostat.set_langevin(kT=1.0, gamma=1.0)
 system.cell_system.set_n_square(use_verlet_lists=True)
@@ -70,7 +70,6 @@ trajectory.write("unitcell %f %f %f\n" %(system.box_l[0],system.box_l[1],system.
 trajectory.write("atom 0:%d radius 2 name mono type %d\n" %(n_mono-1,type_mono))
 	# Bonds
 trajectory.write("bond 0::%d" %(n_mono-1))
-
 
 
 
