@@ -116,7 +116,7 @@ set n_mono 100
 	set gamma 1.0
 
 # init Langevin thermostat
-	setmd skin 0.4
+	setmd skin 12.8
 	integrate set nvt
 
 # init integration timestep
@@ -245,6 +245,7 @@ if {$vis_file=="yes"}	{
 
 # warm-up the polymer!
 	warm_up
+
 
 
 
