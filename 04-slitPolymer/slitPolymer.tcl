@@ -118,7 +118,7 @@ puts "[code_info]"
 	set gamma 1.0
 
 # init Langevin thermostat
-	setmd skin 0.4
+	setmd skin 11.0
 	integrate set nvt
 
 # init integration timestep
@@ -248,9 +248,9 @@ if {$vis_file=="yes"}	{
 
 # create using a Pruned Self-Avoiding Random Walk (WARNING: NOT A RANDOM WALK)
 	polymer 1 $n_mono $b start 0 pos [expr 0.5*$slit_height] [expr 0.5*$ly] [expr 0.5*$lz]  mode PSAW [expr .99*$b] $try_max types $type_mono bond $bondID_fene constraints
-
 # warm-up the polymer!
 	warm_up
+
 
 
 #######################=- RUN LOOP -=########################
