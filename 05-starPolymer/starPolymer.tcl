@@ -119,7 +119,7 @@ puts "[code_info]"
 	set gamma 1.0
 
 # init Langevin thermostat
-	setmd skin 0.4
+	setmd skin 23.5
 	integrate set nvt
 
 # init integration timestep
@@ -270,7 +270,7 @@ if {$vis_file=="yes"}	{
 	
 	# warm-up		
 	warm_up
-	
+
 	#Extra warmup, because star
 	thermostat langevin $kBT 0.01
 	integrate 100000
